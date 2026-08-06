@@ -433,12 +433,6 @@ h3 {
   gap: 1.1rem;
 }
 
-.speakers-grid .speaker-card:nth-child(9) {
-  grid-column: 1 / -1;
-  justify-self: center;
-  width: min(100%, 52%);
-}
-
 .speaker-card {
   display: flex;
   flex-direction: column;
@@ -503,7 +497,7 @@ h3 {
   text-align: left;
 }
 
-.speaker-card:nth-child(9) .speaker-affiliation {
+.speaker-card:nth-child(10) .speaker-affiliation {
   white-space: pre-line;
 }
 
@@ -686,10 +680,6 @@ h3 {
 
   .speakers-grid {
     grid-template-columns: 1fr;
-  }
-
-  .speakers-grid .speaker-card:nth-child(9) {
-    width: 100%;
   }
 
   #about .section-content {
