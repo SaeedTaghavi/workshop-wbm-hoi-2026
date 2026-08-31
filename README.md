@@ -14,7 +14,7 @@ This workshop brings together whole-brain modelling, machine learning, and high-
 - **Dates:** 17–20 November 2026
 - **Daily hours:** 10:00–18:30
 - **Location:** Universitat de les Illes Balears, Palma de Mallorca, Spain
-- **Venue:** [Complex Balear de Recerca](https://maps.app.goo.gl/CQuo56eEEArxxfoJ7)
+- **Venue:** [Complex Balear de Recerca, Parc BIT](https://maps.app.goo.gl/CQuo56eEEArxxfoJ7)
 - **Format:** In person · English · No registration fee
 - **Capacity:** 40 selected participants, application required
 
