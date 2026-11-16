@@ -55,25 +55,6 @@ Notebook 1 checks the data and treats nonpositive GMV values as missing in its a
 
 Notebook 2 reads the Excel table independently and does not carry over notebook 1's cleaning. The supplied table contains 30 nonpositive GMV cells; inspect these before extending the analysis. Changes to data handling require rerunning the model and its outputs.
 
-## Brain-age workflow
-
-Notebook 2 uses a `StandardScaler` followed by `LinearSVR` with squared epsilon-insensitive loss.
-
-- Train and evaluate the reference clock using CN only.
-- Use 5-fold CV repeated 10 times, with seed 1234.
-- Fit scaling inside each training fold.
-- Explore C using validation MAE. The baseline BAG analysis uses fixed C = 1 and epsilon = 3 years.
-- Obtain each CN prediction from its held-out fold. Predict the other groups with each fitted outer model.
-- Estimate age-bias correction from internal out-of-fold predictions within each outer training set. This internal CV is for calibration, not hyperparameter tuning.
-- Calculate raw BAG as predicted age minus chronological age, then subtract the expected age-related bias.
-- Average repeated predictions and corrected BAGs within participant before group analysis. Repetitions are not additional subjects.
-- Measure feature importance by shuffling individual ROIs in held-out CN data and recording the increase in MAE. This measures usefulness for age prediction, not causation or disease specificity.
-- Compare corrected BAGs using an age-adjusted group model, HC3 robust standard errors and Holm-adjusted group-versus-CN p-values.
-
-The included ANCOVA is additive and assumes a common age slope across groups. An age-by-group interaction is discussed but is not fitted by the supplied formula. The boxplots show observed corrected BAG distributions, not adjusted group means.
-
-Validation curves are exploratory. Selecting a new C using those curves and reporting the same CV scores does not provide an independent evaluation of tuning. Use nested tuning CV or a separate test set for that purpose.
-
 ## Independent EEG exercise
 
 The supplied EEG table contains **1,285 rows and 10 `Slope_` features**, plus `Age`, `Sex` and `Educ`. Use the actual supplied table rather than sample counts from earlier drafts or the full paper.
@@ -81,21 +62,3 @@ The supplied EEG table contains **1,285 rows and 10 `Slope_` features**, plus `A
 Source: Hernandez et al. (2024), *Brain health in diverse settings: How age, demographics and cognition shape brain function*, NeuroImage.
 
 Repository: https://github.com/euroladbrainlat/Brain-health-in-diverse-setting
-
-Tasks:
-
-1. Inspect the data and standardize features within training folds.
-2. Predict age using only the slope features, with 5-fold CV repeated 10 times.
-3. Report held-out MAE, R2 and the age-prediction correlation.
-4. Calculate raw and corrected BAGs using training-only calibration.
-5. Test the BAG-education association while controlling for age, or compare low and high education using P33 and P66. Keep the middle group in clock training and exclude it only from the low-high comparison.
-
-Keep education, sex and any exported index out of the age-model predictors. Use education values from 0 to 30 years for the education analysis. If tuning hyperparameters, keep tuning inside the outer training data. A null association is a valid result.
-
-You may use your own dataset instead. It should contain brain features and age, with education available if you wish to address the same question.
-
-## Interpretation
-
-A positive BAG means the model predicts an older age than the participant's chronological age. It does not by itself establish disease, accelerated aging or clinical usefulness. A rate of aging requires longitudinal evidence. Age-bias correction is a statistical adjustment, not biological validation.
-
-The atlas and anatomical background are bundled locally. Their sources are listed in `Tutorial/assets/PROVENANCE.txt`. Consult the original data sources and their terms before redistributing or reusing the datasets outside the workshop.
