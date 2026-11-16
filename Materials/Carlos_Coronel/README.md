@@ -51,10 +51,6 @@ Volumes were already normalized by total intracranial volume (TIV). The Excel ta
 
 Source: *Brain clocks chart genetic risk, staging, mechanisms, and multimodal phenotypes in Down syndrome and Alzheimer's disease*, Nature Aging. The DS participants are a subset of the Barcelona cohort. The tutorial is not a replication of the paper's full analysis.
 
-Notebook 1 checks the data and treats nonpositive GMV values as missing in its analysis copy. It calculates CN-referenced z-scores for descriptive maps. For each ROI, it compares AD with CN and pooled DS with CN, adjusting for age within the age range shared by each pair. Map colors show all estimated coefficients, not only significant results; FDR-adjusted p-values are calculated separately. These are cross-sectional differences, not measured longitudinal atrophy.
-
-Notebook 2 reads the Excel table independently and does not carry over notebook 1's cleaning. The supplied table contains 30 nonpositive GMV cells; inspect these before extending the analysis. Changes to data handling require rerunning the model and its outputs.
-
 ## Independent EEG exercise
 
 The supplied EEG table contains **1,285 rows and 10 `Slope_` features**, plus `Age`, `Sex` and `Educ`. Use the actual supplied table rather than sample counts from earlier drafts or the full paper.
