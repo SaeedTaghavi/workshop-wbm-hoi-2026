@@ -4,6 +4,8 @@ Teaching materials for the [Workshop on Whole-Brain Models and High-Order Intera
 
 Each speaker has a dedicated folder. Available materials include Rodrigo Cofré's and Yonatan Sanz Perl's slide decks and Xiaoge Bao's slides, tutorial notebooks and supporting data. Rubén Herzog's workshop materials are linked from his folder.
 
+[**Download PDFs directly in your browser**](./download.html) (choose a speaker), or access the originals on Drive.
+
 **PDF slides:** To preserve the complete original PDFs while working within upload limits, their bytes are stored in numbered `.pdf.part001`, `.pdf.part002`, ... files. After downloading or cloning this repository, run:
 
 ```bash
