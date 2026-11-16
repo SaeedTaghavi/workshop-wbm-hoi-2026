@@ -2,7 +2,7 @@
 
 Materials for the Workshop on Whole-Brain Models and High-Order Interactions for Brain Health.
 
-Carlos Coronel, PhD - University of Chile - November 2026
+Carlos Coronel
 
 This package introduces brain-age models and their applications, followed by a hands-on tutorial using gray matter volume (GMV). An EEG exercise is included for independent work.
 
@@ -10,9 +10,9 @@ This package introduces brain-age models and their applications, followed by a h
 
 | File | Purpose |
 | --- | --- |
-| `Part_I.pdf` / `Part_I.pptx` | Introduction to brain clocks, machine learning, validation and interpretation. |
-| `Part_II.pdf` / `Part_II.pptx` | Applications of brain clocks. |
-| `Part_III.pdf` / `Part_III.pptx` | Slides supporting the hands-on tutorial. |
+| `Part_I.pdf` | Introduction to brain clocks, machine learning, validation and interpretation. |
+| `Part_II.pdf` | Applications of brain clocks. |
+| `Part_III.pdf` | Slides supporting the hands-on tutorial. |
 | `Tutorial/01_GMV_and_groups.ipynb` | Inspect the data and visualize age-adjusted group differences in GMV. |
 | `Tutorial/02_GMV_clock.ipynb` | Train a linear SVR age model, evaluate it, calculate BAGs and compare groups. |
 | `Tutorial/03_Do_it_yourself.ipynb` | Build an EEG age model and investigate BAGs in relation to education. |
@@ -21,40 +21,11 @@ This package introduces brain-age models and their applications, followed by a h
 | `Tutorial/requirements.txt` | Python libraries and versions. |
 | `Tutorial/assets/` | Local AAL atlas, label table, anatomical background and provenance information. |
 
-The `.ipynb_checkpoints` folder contains Jupyter backup copies. Open the notebooks listed above, not the checkpoint files.
-
-## Setup
-
-Extract the ZIP before opening the notebooks. Keep the folder structure unchanged.
-
 Use Python 3.12. Open a terminal in the extracted package folder and run:
-
-```text
-cd Tutorial
-python -m venv .venv
-```
-
-On Windows:
-
-```text
-.venv\Scripts\python.exe -m pip install -r requirements.txt
-.venv\Scripts\python.exe -m ipykernel install --user --name brain-clocks --display-name "Python (brain clocks)"
-.venv\Scripts\python.exe -m jupyterlab
-```
-
-On macOS or Linux:
-
-```text
-.venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python -m ipykernel install --user --name brain-clocks --display-name "Python (brain clocks)"
-.venv/bin/python -m jupyterlab
-```
-
-Select the **Python (brain clocks)** kernel. Run each notebook from top to bottom. Each notebook loads its own data; running notebook 1 does not populate notebook 2's variables.
 
 The first notebooks expect their working directory to be `Tutorial`, beside the Excel files and `assets` folder. If a file is not found, check the working directory with `Path.cwd()`.
 
-Install the libraries before going offline. Once installed, the supplied data, atlas and background image can be used without internet. External links require a connection. The package does not include Python or offline library installers.
+Install the libraries before going offline.
 
 ## Suggested order
 
@@ -62,7 +33,7 @@ Install the libraries before going offline. Once installed, the supplied data, a
 2. Use Part III alongside notebooks 1 and 2.
 3. Complete notebook 3 independently, using notebook 2 as a guide.
 
-Model fitting can take several minutes. The calibration loop fits many additional models. Saved notebook outputs can be viewed without rerunning cells; they may need updating after any code or data changes.
+**Just in case: the model fitting can take several minutes. The calibration loop fits many additional models.**
 
 ## GMV data
 
