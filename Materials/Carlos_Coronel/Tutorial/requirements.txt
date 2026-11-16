@@ -1,0 +1,14 @@
+# Tested with Python 3.12
+numpy==2.5.4
+pandas==3.1.1
+scipy==1.18.1
+scikit-learn==1.9.1
+statsmodels==0.15.0
+matplotlib==3.11.2
+seaborn==0.13.2
+openpyxl==3.1.5
+nibabel==5.5.0
+nilearn==0.14.1
+joblib==1.6.0
+ipykernel==7.4.0
+jupyterlab==4.6.6

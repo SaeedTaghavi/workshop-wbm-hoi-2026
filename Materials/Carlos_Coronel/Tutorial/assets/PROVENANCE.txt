@@ -1,0 +1,6 @@
+AAL atlas: AAL SPM12.
+Source: https://www.gin.cnrs.fr/AAL_files/aal_for_SPM12.tar.gz
+Fetched with nilearn.datasets.fetch_atlas_aal(version="SPM12").
+AAL.nii.gz is the downloaded atlas re-saved as compressed NIfTI.
+aal_labels.csv retains the atlas names and integer label codes.
+background.nii.gz is nilearn.datasets.load_mni152_template(resolution=2).
