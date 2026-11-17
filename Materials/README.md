@@ -4,7 +4,7 @@ Teaching materials for the [Workshop on Whole-Brain Models and High-Order Intera
 
 ## Workshop introduction
 
-[**Workshop introduction slides (PDF)**](./Workshop_Introduction.pdf) · [Editable Google Slides](https://docs.google.com/presentation/d/1sPXNKsYgZWEkkY0kCYP_dzHqhJKHVE2MeSmmPBB1Vq8/edit)
+[**Workshop introduction slides (PDF)**](./Workshop_Introduction.pdf)
 
 ## Speaker materials
 
@@ -17,7 +17,7 @@ Slides are provided as direct PDFs when hosted in this repository or as direct G
 | Yonatan Sanz Perl | [Yonatan_Sanz_Perl](./Yonatan_Sanz_Perl/) | [Slides (Google Drive)](https://drive.google.com/file/d/1ARyPJ6Gf38Gn_hn24mM4x74pWVfTDlhI/view) |
 | Marilyn Gatica | [Marilyn_Gatica](./Marilyn_Gatica/) | Awaiting materials |
 | Kaichao Wu | [Kaichao_Wu](./Kaichao_Wu/) | Awaiting materials |
-| Rubén Herzog | [Ruben_Herzog](./Ruben_Herzog/) | Links to workshop materials |
+| Rubén Herzog | [Ruben_Herzog](./Ruben_Herzog/) | Awaiting materials |
 | Carlos Coronel | [Carlos_Coronel](./Carlos_Coronel/) | PDFs, notebooks and data |
 | Xiaoge Bao | [Xiaoge_Bao](./Xiaoge_Bao/) | [Slides (Google Drive)](https://drive.google.com/file/d/1UI39B0aq79v7N0d3SIYGHnGoGYsVA9_g/view), notebooks and data |
 | Lei Zhao | [Lei_Zhao](./Lei_Zhao/) | Awaiting materials |
