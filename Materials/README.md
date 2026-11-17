@@ -22,4 +22,4 @@ Slides are provided as direct PDFs when hosted in this repository or as direct G
 | Xiaoge Bao | [Xiaoge_Bao](./Xiaoge_Bao/) | [Slides (Google Drive)](https://drive.google.com/file/d/1UI39B0aq79v7N0d3SIYGHnGoGYsVA9_g/view), notebooks and data |
 | Lei Zhao | [Lei_Zhao](./Lei_Zhao/) | Awaiting materials |
 
-[Original workshop materials folder (Google Drive)](https://drive.google.com/drive/u/0/folders/12_GbHXjhR1fYVBDQyCHlOf4ee2Rjeq55)
+
