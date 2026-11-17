@@ -17,7 +17,7 @@ This rebuilds the original PDFs in their speaker folders and verifies SHA-256 ch
 | Speaker | Directory | Content |
 | --- | --- | --- |
 | Rodrigo Cofré | [Rodrigo_Cofre](./Rodrigo_Cofre/) | Slides |
-| Joana Cabral | [Joana_Cabral](./Joana_Cabral/) | Awaiting materials |
+| Joana Cabral | [Joana_Cabral](./Joana_Cabral/) | [Workshop code (Google Drive)](https://drive.google.com/drive/folders/1mRj6ki4UUoi4EXTFjgiCRsKwWtj5NjoQ?usp=drive_link) |
 | Yonatan Sanz Perl | [Yonatan_Sanz_Perl](./Yonatan_Sanz_Perl/) | Slides |
 | Marilyn Gatica | [Marilyn_Gatica](./Marilyn_Gatica/) | Awaiting materials |
 | Kaichao Wu | [Kaichao_Wu](./Kaichao_Wu/) | Awaiting materials |
