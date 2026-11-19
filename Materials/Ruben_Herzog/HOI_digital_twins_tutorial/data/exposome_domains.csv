@@ -1,0 +1,69 @@
+domain,variable,column
+Air pollution,PM2.5,PM2.5_interpolated
+Air pollution,Nitrogen oxides (NOx),Nitrogen oxide (NOx)_interpolated
+Air pollution,Sulfur dioxide (SO2),Sulphur dioxide (SO₂) emissions_interpolated
+Air pollution,Carbon monoxide (CO),Carbon monoxide (CO) emissions_interpolated
+Air pollution,Black carbon (BC),Black carbon (BC) emissions_interpolated
+Air pollution,Ammoniac Nitrogen (NH3),Ammonia (NH₃) emissions_interpolated
+Air pollution,Non-methane volatile organic compounds (NMVOC),Non-methane volatile organic compounds (NMVOC) emissions_interpolated
+Green space access,Urban green area (%) 1990,Average share of green area in city/urban area 1990 (%)_interpolated
+Green space access,Urban green area (%) 2000,Average share of green area in city/ urban area 2000 (%)_interpolated
+Green space access,Urban green area (%) 2010,Average share of green area in city/ urban area 2010 (%)_interpolated
+Green space access,Urban green area (%) 2020,Average share of green area in city/ urban area 2020 (%)_interpolated
+Green space access,Green area per capita (m2/person) 1990,Green area per capita 1990 (m2/person)_interpolated
+Green space access,Green area per capita (m2/person) 2000,Green area per capita 2000 (m2/person)_interpolated
+Green space access,Green area per capita (m2/person) 2010,Green area per capita 2010 (m2/person)_interpolated
+Green space access,Green area per capita (m2/person) 2020,Green area per capita 2020 (m2/person)_interpolated
+Temperature,Mean temperature,mean_temp_areaw_o_interpolated
+Temperature,Mean temperature pop-weighted,mean_temp_o_interpolated
+Temperature,Mean temperature anomalies,mean_anomalies_areaw_o_interpolated
+Temperature,Mean temperature anomalies pop-weighted,mean_anomalies_o_interpolated
+Temperature,Deviation of temperature anomalies,sd_lr_o_interpolated
+Temperature,Max temperature,maxgtemp_o_interpolated
+Precipitation and droughts,Mean precipitation,mean_prec2_areaw_o_interpolated
+Precipitation and droughts,Mean precipitation pop-weighted,mean_prec2_o_interpolated
+Precipitation and droughts,Palmer drought severity index,scpdsi_aw_o_interpolated
+Precipitation and droughts,Palmer drought severity index pop-weighted,scpdsi_o_interpolated
+Soil and water quality,Poisoning mortality rate,Poisoning_mortality_rate_interpolated
+Soil and water quality,Basic drinking water access,Pop_basic_drinking-water(%)_interpolated
+Soil and water quality,Safely-managed drinking water access,Pop_safely_drinking-water(%)_interpolated
+Soil and water quality,Agriculture employment rate,agri_emp_o_interpolated
+Climate disasters,Number of disaster events,climatedisaster_count_o_interpolated
+Climate disasters,Population affected,climatedisaster_naffected_o_interpolated
+Disease-related mortality,Non-communicable death rate (%),deaths_notrans_interpolated
+Disease-related mortality,Communicable death rate (%),deaths_trans_interpolated
+Socioeconomic,Gini index,GINI_interpolated
+Socioeconomic,Human capital index,HCI_interpolated
+Socioeconomic,Human development index (HDI),HDI_interpolated
+Socioeconomic,Inequality-Adjusted HDI,IHDI_interpolated
+Socioeconomic,Multidimensional poverty measures,MPM_interpolated
+Socioeconomic,Energy demand,Electricity_demand_interpolated
+Socioeconomic,Gender inequality index,GII_interpolated
+Socioeconomic,Unemployment rate,unemp_interpolated
+Socioeconomic,GDP per capita,GDP_interpolated
+Democracy,Credible elections,cred_elect_est_interpolated
+Democracy,Inclusive suffrage,inclu_suff_est_interpolated
+Democracy,Free parties,free_parties_est_interpolated
+Democracy,Elected government,elected_gov_est_interpolated
+Democracy,Effective parliament,effect_parl_est_interpolated
+Democracy,Local democracy,local_dem_est_interpolated
+Democracy,Access to justice,access_just_est_interpolated
+Democracy,Civil liberties,civil_lib_est_interpolated
+Democracy,Freedom of expression (Civil liberties),free_express_est_interpolated
+Democracy,Freedom of the press (Civil liberties),free_press_est_interpolated
+Democracy,Freedom of association and assembly (Civil liberties),free_assoc_assem_est_interpolated
+Democracy,Freedom of religion (Civil liberties),free_relig_est_interpolated
+Democracy,Freedom of movement (Civil liberties),free_move_est_interpolated
+Democracy,Political equality,pol_equal_est_interpolated
+Democracy,Social group equality (Political equality),soc_grp_equal_est_interpolated
+Democracy,Economic equality (Political equality),econ_equal_est_interpolated
+Democracy,Gender equality (Political equality),gender_equal_est_interpolated
+Democracy,Judicial independence,jud_ind_est_interpolated
+Democracy,Absence of Corruption,abs_corrupt_est_interpolated
+Democracy,Predictability enforcement,predict_enf_est_interpolated
+Democracy,Personal integrity and security,pers_integ_sec_est_interpolated
+Democracy,Civil society,civil_soc_est_interpolated
+Democracy,Civic engagement,civic_engage_est_interpolated
+Democracy,Electoral participation,elect_part_est_interpolated
+Democracy,Direct democracy,direct_dem_est_interpolated
+Migration,Inbound migration rate,migration_interpolated
