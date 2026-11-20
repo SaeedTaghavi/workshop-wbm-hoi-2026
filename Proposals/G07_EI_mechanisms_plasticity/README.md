@@ -80,19 +80,26 @@ The output is an experimentally ranked set of plasticity rules, a validated tool
 
 ### B5. Approach
 
+```mermaid
+flowchart LR
+    EI["<b>E/I balance</b><br/>controlled<br/>(drugs + optogenetics)"]
+    DYN["<b>Dynamics</b><br/>rhythms · 1/f slope<br/>avalanches · states"]
+    PLAST["<b>Plasticity</b><br/>which rule?<br/>iSTDP · STDP · scaling · structural"]
+    STRUCT["<b>Structure</b><br/>effective connectivity<br/>high-order interactions"]
+
+    EI -->|perturb / clamp| DYN
+    DYN -->|activity drives| PLAST
+    PLAST -->|rewiring| STRUCT
+    STRUCT -->|new E/I| EI
+    STRUCT -. "models predict this<br/><b>before</b> it is measured" .-> PLAST
+
+    classDef lab fill:#e8f0fe,stroke:#4a6fa5,stroke-width:2px,color:#1a2b4a;
+    classDef model fill:#fdeef0,stroke:#b5546a,stroke-width:2px,color:#4a1a2b;
+    class EI,DYN lab;
+    class PLAST,STRUCT model;
 ```
-   ┌───────────────┐   drugs / opto   ┌──────────────┐   activity    ┌──────────────┐
-   │  E/I balance  │ ───────────────▶ │   Dynamics   │ ────────────▶ │  Plasticity  │
-   │ (controlled)  │                  │ rhythms, 1/f │               │ (rule = ?)   │
-   └───────▲───────┘                  │ states, aval.│               └──────┬───────┘
-           │                          └──────▲───────┘                      │
-           │      new E/I                    │  new dynamics                ▼
-           └──────────────────────────── ┌───┴──────────┐ ◀──────── rewiring
-                                         │  Structure   │
-                                         │ (eff. conn., │   NEST / rate models predict
-                                         │   HOI)       │   this BEFORE it is measured
-                                         └──────────────┘
-```
+
+*Blue nodes are measured in the lab; red nodes are where the models make — and are scored on — predictions. The loop is closed: the inferred new structure feeds back as a new E/I state (WP5, objective O5).*
 
 **Experimental system.** Cortical cultures on high-density multi-electrode arrays (MEAs): many electrodes, single-unit resolution, recordings over days. Cultures are cheap, repeatable and easy to reach with both drugs and light, which makes them the right bench for a loop that has to be run many times.
 
